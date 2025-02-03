@@ -8,6 +8,13 @@ var diets = getColumn(url,5)
 function searchBirds(primaryColor, diet){
     var matchingBirds=[];
         for(var i=0; i<diets.length;i++){
-            if((diets[i].toLowerCase().includes(diet.toLowerCase()))){}
+            if((diets[i].toLowerCase().includes(diet.toLowerCase()))&&(primaryColors.toLowerCase()[i]==primaryColor.toLowerCase())){
+                matchingBirds.push(names[i]);
+            }
         }
+    if(matchingBirds.length==0){
+        return "No birds found."
+    }
+    return matchingBirds
 }
+console.log
