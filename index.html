@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <H9>Bird Color</H9>
+        <br>
+            <div class="inputs">
+                <select id="color">
+                <option value="Yellow">Yellow</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Brown">Brown</option>
+                <option value="Grey">Grey</option>
+                <option value="Green">Green</option>
+                <option value="Red">Red</option>
+                <option value="Pink">Pink</option>
+                </select>
+            </div>
+            <H8>Bird Color</H8>
+        <br>
+            <div class="inputs">
+                <select id="diet">
+                <option value="seeds">Seeds</option>
+                
+                </select>
+            </div>
+
+    <button onclick="searchBirds(document.getElementById('color').value, document.getElementById('diet').value)" id="go">Find Bird</button>
+                    <div class="outputBox" id="outputBox">
+                         <p id="output"></p>
     <script src="utils.js"></script>
     <script src="script.js"></script>
 </body>
